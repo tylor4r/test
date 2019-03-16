@@ -73,3 +73,49 @@
 // console.log(one && two);
 // console.log(one && !two);
 // Здесь я перевел two со значением false в true Оператором !
+
+// Условия
+// if (2*4 == 7) {
+//     console.log("true");
+// } else {
+//     console.log("false")
+// }
+
+let num = 50;
+// let num = prompt("Угадай число!");
+// if (num < 49) {
+//     console.log("неверно!");
+// } else if (num > 100) {
+//     console.log("Много!");
+// } else {
+//     console.log("Верно!");
+// }
+// Ладно эту запись можно сократить
+// (num == 50) ? console.log("Верно!") : console.log("Неверно!");
+// Этот оператор называется тернарным, так как в его работе участвуют 3
+
+// Бывают случаи что неудобно использовать if, тогда можно попробовать switch
+switch (num) {
+    case num < 49:
+        console.log("неверно!");
+        break;
+    case num > 100:
+        console.log("Много!");
+        break;
+    case num > 80:
+        console.log("Всё еще много");
+        break;
+    case 50:   //Очень важно запомнить, что тут ставиться само значение, а не название переменной
+        console.log("Вот теперь верно!");
+        break;
+    default:  // Это не обязателая команда, но если ничего не подойдёт выскачит default
+        console.log("Что-то пошло не так");
+        break;
+}
+
+
+
+
+
+
+
